@@ -1,25 +1,37 @@
 ﻿{
-  "schemaVersion": 1,
-  "generatedAt": "2026-06-26T00:00:00Z",
-  "maintainer": "hudsondiamondanimation-lab/WireShield",
-  "description": "WireShield relay feed. Keep entries sourced from trusted/public reports or reviewed user submissions.",
-  "sources": [
-    "Reviewed user reports",
-    "OpenPhish community",
-    "PhishTank verified",
-    "URLhaus where licensed/authenticated"
-  ],
-  "entries": [
-    {
-      "domain": "example-dangerous-site.invalid",
-      "url": "https://example-dangerous-site.invalid/login",
-      "type": "phishing",
-      "reports": 3,
-      "confidence": 90,
-      "source": "WireShield sample - replace before publishing",
-      "firstSeen": "2026-06-26",
-      "lastSeen": "2026-06-26",
-      "note": "Example entry only. Delete or replace with reviewed reports."
-    }
-  ]
+    "schemaVersion":  1,
+    "generatedAt":  "2026-06-26T19:10:18Z",
+    "maintainer":  "hudsondiamondanimation-lab/WireShield",
+    "description":  "WireShield global relay feed. Public JSON used by the browser extension and desktop app for reviewed dangerous-site updates.",
+    "sources":  [
+                    "Reviewed user reports",
+                    "Google Safe Browsing public test host",
+                    "OpenPhish community",
+                    "PhishTank verified",
+                    "URLhaus where licensed/authenticated"
+                ],
+    "entries":  [
+                    {
+                        "domain":  "testsafebrowsing.appspot.com",
+                        "url":  "https://testsafebrowsing.appspot.com/s/phishing.html",
+                        "type":  "phishing test",
+                        "reports":  10000,
+                        "confidence":  99,
+                        "source":  "Google Safe Browsing public test host",
+                        "firstSeen":  "2026-06-26",
+                        "lastSeen":  "2026-06-26",
+                        "note":  "Safe browser-warning test entry. Use this to confirm WireShield shows its block page."
+                    },
+                    {
+                        "domain":  "testsafebrowsing.appspot.com",
+                        "url":  "https://testsafebrowsing.appspot.com/s/malware.html",
+                        "type":  "malware test",
+                        "reports":  10000,
+                        "confidence":  99,
+                        "source":  "Google Safe Browsing public test host",
+                        "firstSeen":  "2026-06-26",
+                        "lastSeen":  "2026-06-26",
+                        "note":  "Safe malware-warning test entry. Domain is blocked by WireShield when loaded."
+                    }
+                ]
 }
