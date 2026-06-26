@@ -1,0 +1,25 @@
+﻿{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-26T00:00:00Z",
+  "maintainer": "hudsondiamondanimation-lab/WireShield",
+  "description": "WireShield relay feed. Keep entries sourced from trusted/public reports or reviewed user submissions.",
+  "sources": [
+    "Reviewed user reports",
+    "OpenPhish community",
+    "PhishTank verified",
+    "URLhaus where licensed/authenticated"
+  ],
+  "entries": [
+    {
+      "domain": "example-dangerous-site.invalid",
+      "url": "https://example-dangerous-site.invalid/login",
+      "type": "phishing",
+      "reports": 3,
+      "confidence": 90,
+      "source": "WireShield sample - replace before publishing",
+      "firstSeen": "2026-06-26",
+      "lastSeen": "2026-06-26",
+      "note": "Example entry only. Delete or replace with reviewed reports."
+    }
+  ]
+}
